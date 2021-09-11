@@ -1,0 +1,140 @@
+    1  yum kernel-headers
+    2  sudo su
+    3  sudo yum kernel-headers
+    4  root
+    5  root su
+    6  sudo su
+    7  sudo su -
+    8  reboot
+    9  dsd
+   10  ls
+   11  12
+   12  su
+   13  cd oos
+   14  ls
+   15  cd Рабочий\ стол/
+   16  жы
+   17  ls
+   18  cd oos
+   19  ls
+   20  git clone git@github.com:42fat/OSS2021.git
+   21  sudo yum install git
+   22  su
+   23  whoami
+   24  whoaim
+   25  whoami
+   26  echo "Hello World"
+   27  date
+   28  cal
+   29  man cal
+   30  cal --three
+   31  history 
+   32  clear 
+   33  pwd
+   34  cd /
+   35  cd ..
+   36  pwd
+   37  ls
+   38  ls /var/
+   39  cd ~
+   40  cd ..
+   41  pwd
+   42  ls -l
+   43  cd ~
+   44  man ls
+   45  ls
+   46  mkdir fruits
+   47  cd / 
+   48  mkdir ~/animals
+   49  touch /tmp/temp
+   50  cd ~/fruits/
+   51  touch apple
+   52  touch banana
+   53  touch pineaple
+   54  touch lion
+   55  ls
+   56  touch ~/animals/cat.txt
+   57  touch ~/animals/dog.txt
+   58  touch ~/animals/elephant.txt
+   59  stat apple
+   60  ls -l
+   61  ls b*
+   62  ls *a
+   63  ls [bi]*
+   64  ls b* i*
+   65  cp /etc/passwd ~
+   66  cat /etc/issue
+   67  cp /etc/issue ./apple 
+   68  cat apple 
+   69  mv lion ~/animals/
+   70  ls
+   71  mv pineaple pineapple
+   72  ls
+   73  wc -l /etc/passwd
+   74  cd ~
+   75  ln -s /etc/passwd passwd_link
+   76  ln .bash_history history_hard
+   77  ls -l .bash_history 
+   78  ls -l 
+   79  rm fruits/apple 
+   80  mkdir rmme 
+   81  rmdir rmme
+   82  rmdir fruits/
+   83  rm -fr fruits/
+   84  cat /etc/passwd /var/log/boot.log 
+   85  sudo cat /etc/passwd /var/log/boot.log 
+   86  cp /etc/init.d/ ~
+   87  cp -r  /etc/init.d/ ~
+   88  rm -fr  init.d/
+   89  cut -d:-f1 /etc/passwd | sort
+   90  cut -d: -f1 /etc/passwd | sort
+   91  cut -d: -f1,3,4 /etc/passwd | column -ts | less
+   92  cut -d: -f1,3,4 /etc/passwd | column -ts: | less
+   93  cut -d: -f1,3 /etc/passwd | column -ts: | less
+   94  grep :/bin/bash /etc/passwd | wc -l
+   95  grep :/bin/bash /etc/passwd | cut -d: -f1 | sort -r
+   96  grep :/bin/bash /etc/passwd | cut -d: -f1 | sort 
+   97  rpm -qa --qf '%{NAME}: %{SIZE}\n' | sort -rn -k2,2 | head -25
+   98  rpm -ql man-db | xargs -l du 2> /dev/null | sort -n
+   99  top -b -n1 | sort -n
+  100  top -b -n1 | sort -k
+  101  top -b -n1 | sort -k 12
+  102  top -b -n1 | sort -k 13
+  103  top -b -n1 | sort -k 12
+  104  top -b -n1 | tail -n+8 | cut -c7- | tr -s ' ' '\t' | cut -f11,5
+  105  cut /etc/passwd | sort -k1 | rt ":" " "
+  106  cut /etc/passwd | sort -k1 | tr ":" " "
+  107  cut -d:  /etc/passwd | sort -k1 | tr ":" " "
+  108  cut -d: -f1 /etc/passwd | sort -k1 | tr ":" " "
+  109  cut -d: -f1,2 /etc/passwd | sort -k1 | tr ":" " "
+  110  cut -d: -f1,3 /etc/passwd | sort -k1 | tr ":" " "
+  111  cut -d: -f5 /etc/passwd | sort -k1 | tr ":" " "
+  112  cut  /etc/passwd  tr ":" " "
+  113  cut  /etc/passwd | tr ":" " "
+  114  cat  /etc/passwd | tr ":" " "
+  115  cat  /etc/passwd | tr ":" " " | sort -k1
+  116  cut -d: -f1,7  /etc/passwd | column | sort -k1
+  117  cut -d: -f1,7  /etc/passwd | column -ts: | sort -k1
+  118  cd /usr/share/doc/git-*
+  119  cat user-manual.txt | tr ' ' '\012' | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | grep -v '[^a-z]' | sort | uniq -c | sort -rn | head -5
+  120  cat user-manual.txt | tr -cs '[:alpha:]' '\n' | tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -rn | head -5
+  121  tr '[:lower:]' '[:upper:]' < user-manual.txt | tr -d '[:punct:] \n\t' | fold -w1 | sort | uniq -c | sort -rn | head -5
+  122  tr -cs '[:alpha:]' '\n' < user-manual.txt | less | grep -E ........ | sort | uniq -c | sort -rn | head
+  123  cd  ~
+  124  ping ya.ru
+  125  curl wttr.in
+  126  hostname -I
+  127  curl ifconfig.me
+  128  wget https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README-ru.md
+  129  less README-ru.md 
+  130  id
+  131  whoiam
+  132  whoami
+  133  su
+  134  history
+  135  /var/log/messages
+  136  sudo /var/log/messages
+  137  su
+  138  ls
+  139  cd Рабочий\ стол/
+  140  history > lab1_history.txt
