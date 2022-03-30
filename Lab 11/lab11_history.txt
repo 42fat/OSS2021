@@ -1,0 +1,14 @@
+    7  uname -r
+    8  rpmdev-setuptree
+    9  yumdownloader --source kernel
+   10  rpm -i kernel-4.18.0-305.10.2.el7.src.rpm 
+   11  ls rpmbuild/SPECS/
+   12  ls rpmbuild/SOURCES/
+   13  rpmbuild -bs ~/rpmbuild/SPECS/kernel.spec 
+   14  ls ~/rpmbuild/SRPMS/
+   15  su
+   16  rpmbuild -bp --target=$(uname -m) rpmbuild/SPECS/kernel.spec 
+   17  cd rpmbuild/BUILD/kernel-4.18.0-305.10.2.el7.src.rpm
+   18  cd rpmbuild/BUILD/kernel*/linux*
+   19  ls ~/rpmbuild/BUILD/kernel-4.18.0-305.10.2.el7/ernel-4.18.0-305.10.2.el7.centos.x86_64/
+   20  history > lab11_history.txt

@@ -1,0 +1,51 @@
+  547  ldd /bin/login | grep pam
+  548  ls -l /lib62/libpam*
+  549  ls -l /lib64/libpam*
+  550  ls -l /lib64/security/
+  551  vi /etc/pam.d/system-auth
+  552  vi /etc/pam.d/su
+  553  root
+  554  su
+  555  su -c "hostname mephi"
+  556  vi /etc/pam.d/su
+  557  su
+  558  ыг vi /etc/pam.d/su
+  559  su vi /etc/pam.d/su
+  560  sudo su vi /etc/pam.d/su
+  561  vi /etc/pam.d/su
+  562  sudo vlado_korch
+  563  su vlados_korch
+  564  sudo vlados_korch
+  565  св /etc/pam.d
+  566  cd /etc/pam.d
+  567  ls -l
+  568  chmod ugo+rwx su
+  569  sudo su -root
+  570  sudo su - root
+  571  cd
+  572  sudo -i
+  573  su
+  574  su - user1
+  575  sudo adduser user2
+  576  sudo passwd user2
+  577  su - user2
+  578  su
+  579  whoami
+  580  su - user2
+  581  su
+  582  su - user2
+  583  su
+  584  su - root
+  585  su - user1
+  586  man pam_pwquality
+  587  su vi /etc/security/pwquality.conf 
+  588  sudo su vi /etc/security/pwquality.conf 
+  589  su
+  590  sudo passwd user2
+  591  su
+  592  sudo - user1
+  593  su - user1
+  594  su
+  595  cd Документы/
+  596  gcc check_user.c -o check_user -lpam -lpam_misc
+  597  history > lab8.txt
